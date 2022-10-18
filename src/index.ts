@@ -1,6 +1,6 @@
 import { createApp } from "vue";
 
-import SButton from "./button";
+import SButton from "./Button";
 import SFCButton from "./SFCButton.vue"
 
 import ZeroUI from "./entry";
