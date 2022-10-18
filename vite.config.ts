@@ -35,5 +35,11 @@ export default defineConfig({
             formats: ["esm", "umd", "iife"],
         },
     },
-
+    test: {
+        globals: true,
+        environment: 'happy-dom',
+        transformMode: {
+            web: [/.[tj]sx$/]
+        }
+    }
 });
