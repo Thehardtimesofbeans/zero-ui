@@ -32,7 +32,7 @@ export default defineConfig({
         lib: {
             entry: "./src/entry.ts",
             name: "ZeroUI",
-            fileName: "zero-ui",
+            fileName: "zero101-ui",
             // 导出模块格式
             formats: ["esm", "umd", "iife"],
         },

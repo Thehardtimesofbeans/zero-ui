@@ -15,7 +15,7 @@ const sidebar = {
     ]
 }
 const config = {
-    title: "🔨 Zero-UI",
+    title: "🔨 zero101-ui",
     description: "测试vue的组件库",
     themeConfig: {
         sidebar,
