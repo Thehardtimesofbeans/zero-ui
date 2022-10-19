@@ -8,7 +8,7 @@ import Unocss from "./config/unocss";
 
 const rollupOptions = {
 
-    external: ["vue", "vue-router"],
+    external: ["vue"],
     output: {
         globals: {
             vue: "Vue",
@@ -25,7 +25,9 @@ export default defineConfig({
     ],
     build: {
         rollupOptions,
-        minify: false,
+        minify: 'terser',
+        sourcemap: true,
+        brotliSize: true, // 生成压缩大小报告
         cssCodeSplit: true,
         lib: {
             entry: "./src/entry.ts",

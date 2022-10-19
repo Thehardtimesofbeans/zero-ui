@@ -1,31 +1,22 @@
 <h1>Demo</h1>
 <div id="app"></div>
-<link rel="stylesheet" href="../../dist/assets/entry.68ffeda3.css" />
+<link rel="stylesheet" href="../../dist/assets/entry.0878cb10.css" />
 <script type="module">
+  //import { createApp } from "../../node_modules/vue/dist/vue.global.js";
   import { createApp } from "vue/dist/vue.esm-bundler.js";
-  import ZeroUI, {
+  import SmartyUI, {
     SFCButton,
     JSXButton,
-    MyButton,
+    Button,
   } from "../../dist/zero-ui.esm.js";
-
-  // createApp({
-  //   template: `
-  //     <SButton/>
-  //     <JSXButton/>
-  //     <SFCButton/>
-  //   `,
-  // })
-  //   .use(ZeroUI)
-  //   .mount("#app");
 
   createApp({
     template: `
-            <div>
-                <SButton color="blue" round plain icon="search">普通按钮11</SButton>
-            </div>
-        `,
+      <SButton>SButton</SButton>
+      <JSXButton/>
+      <SFCButton/>
+    `,
   })
-    .use(ZeroUI)
+    .use(SmartyUI)
     .mount("#app");
 </script>
